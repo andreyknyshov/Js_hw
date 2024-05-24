@@ -3,11 +3,11 @@ Task3**. Напишите программу, которая принимает 
 n + nn + nnn, где n не перемножаются, а конкатенируются
 */
 
-let n = 3;
-let nString = "" + n;
-let nnString = nString + nString;
-let nnnString = nString + nString + nString;
-let sum1 = n + (+nnString) + (+nnnString);
+const n = 3;
+const nString = "" + n;
+const nnString = nString + nString;
+const nnnString = nString + nString + nString;
+const sum1 = n + (+nnString) + (+nnnString);
 console.log ("Сумма = " + sum1);
 
 

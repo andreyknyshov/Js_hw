@@ -12,7 +12,7 @@ const a = 1;
 const b = -6;
 const c = 9;
 //Формула дискриминанта D = b^2 - 4 * a * c
-let discriminant = b ** 2 - 4 * a * c;
+const discriminant = b ** 2 - 4 * a * c;
 // переменные для определения корней уравнения 
 let x1;
 let x2;
@@ -42,7 +42,7 @@ const a2 = 1;
 const b2 = -4;
 const c2 = -5;
 //Формула дискриминанта D = b^2 - 4 * a * c
-let discriminant2 = b2 ** 2 - 4 * a2 * c2;
+const discriminant2 = b2 ** 2 - 4 * a2 * c2;
 // переменные для определения корней уравнения 
 let x3;
 let x4;
