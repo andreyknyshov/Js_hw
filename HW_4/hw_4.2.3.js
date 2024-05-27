@@ -8,7 +8,7 @@
   const age = 10; 
   const age_2 = 18; 
   const age_3 = 60;
-  if (isNaN(age) != true) {
+  if (!isNaN(age)) {
   switch (true) {
       case (age < age_2) :
           console.log('You don’t have access cause your age is ' + age + ' It’s less then ');   
