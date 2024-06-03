@@ -7,19 +7,17 @@
 */
 
 let number = 1; // число, которое будем выводить
-while (number <= 100){
-   if ((number % 3 == 0) && (number % 5 == 0 )) {
-    console.log("Число " + number + " делится без остатка на 3 и на 5" );
-   }    else {
-            if (number % 3 === 0){
-                console.log("Число " + number + " делится без остатка на 3" );
-            }   else {
-                    if (number % 5 === 0){
-                        console.log("Число " + number + " делится без остатка на 5" );
-                    }   else console.log("Число " + number);
-                }
-        }
-number++;
+while (number <= 100) {
+  if (number % 3 == 0 && number % 5 == 0) {
+    console.log("Число " + number + " делится без остатка на 3 и на 5");
+  } else {
+    if (number % 3 === 0) {
+      console.log("Число " + number + " делится без остатка на 3");
+    } else {
+      if (number % 5 === 0) {
+        console.log("Число " + number + " делится без остатка на 5");
+      } else console.log("Число " + number);
+    }
+  }
+  number++;
 }
-
-

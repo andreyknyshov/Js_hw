@@ -17,30 +17,25 @@
 
   */
 
- 
-  let bytes = 16565846;
-  let currentUnit = 0;
-  
-  while (bytes >= 1024) {
-      bytes = bytes / 1024;
-      currentUnit++; 
-  }
+let bytes = 16565846;
+let currentUnit = 0;
 
-  switch (currentUnit){
-    case 0: 
-      console.log(bytes.toFixed(1),"byte");
-      break;
-    case 1: 
-      console.log(bytes.toFixed(1),"kb");
-      break;
-    case 2: 
-      console.log(bytes.toFixed(1),"Mb");
-      break;
-    case 3: 
-      console.log(bytes.toFixed(1),"Gb");
-      break;
-  }
-  
-  
-  
-   
+while (bytes >= 1024) {
+  bytes = bytes / 1024;
+  currentUnit++;
+}
+
+switch (currentUnit) {
+  case 0:
+    console.log(bytes.toFixed(1), "byte");
+    break;
+  case 1:
+    console.log(bytes.toFixed(1), "kb");
+    break;
+  case 2:
+    console.log(bytes.toFixed(1), "Mb");
+    break;
+  case 3:
+    console.log(bytes.toFixed(1), "Gb");
+    break;
+}
