@@ -2,7 +2,7 @@
   и возвращать только те, которых нет у конкурента (тоже массив). Если все ваши пиццы есть у конкурента - вернуть null
   Пиццы конкурента:
   const competitorPizzas = ['Peperoni', 'Caprichosa', 'Diablo', '4 cheeses', 'hawai']
-*/
+
 
 const competitorPizzas = [
   "Peperoni",
@@ -35,4 +35,27 @@ function getUniquePizza(myPizzaArray) {
 }
 console.log(
   getUniquePizza(["Peeroni", "Caprichosa", "Diablo", "4 cheses", "hawai"])
+);
+*/
+
+const competitorPizzas = [
+  "Peperoni",
+  "Caprichosa",
+  "Diablo",
+  "4 cheeses",
+  "hawai",
+];
+
+function getUniquePizza(myPizzaArray) {
+  const resultArray = [];
+  for (let indexMy = 0; indexMy < myPizzaArray.length; indexMy++) {
+    if (!competitorPizzas.includes(myPizzaArray[indexMy])) {
+      resultArray.push(myPizzaArray[indexMy]);
+    }
+  }
+  return resultArray.length ? resultArray : null;
+}
+
+console.log(
+  getUniquePizza(["Peperoi", "Caprichosa", "Dialo", "4 cheeses", "hawai"])
 );

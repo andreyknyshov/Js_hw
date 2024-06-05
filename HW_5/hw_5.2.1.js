@@ -17,7 +17,7 @@
 
   */
 
-let bytes = 16565846;
+let bytes = 165634345455846;
 let currentUnit = 0;
 
 while (bytes >= 1024) {
@@ -37,5 +37,8 @@ switch (currentUnit) {
     break;
   case 3:
     console.log(bytes.toFixed(1), "Gb");
+    break;
+  case 4:
+    console.log(bytes.toFixed(1), "Tb");
     break;
 }

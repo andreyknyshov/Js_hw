@@ -1,6 +1,6 @@
 //4. Написать функцию, которая принимает на вход слово и проверяет, является ли это слово палиндромом
 
-function Palindrome(word) {
+function palindrome(word) {
   let revWord = ""; // Переменная для хранения перевернутого слова
 
   // реверс слова
@@ -15,4 +15,4 @@ function Palindrome(word) {
   }
 }
 
-console.log(Palindrome("довод"));
+console.log(palindrome("довод"));

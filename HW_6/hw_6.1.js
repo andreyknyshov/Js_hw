@@ -15,9 +15,7 @@ function getEmployeeInfo(employeeName) {
     // если индекс валидный и сотрудник найден - формируем выходной массив
     const resultArray = [];
     resultArray.push(employeeName, paymentArray[index]);
-    return resultArray;
-  } else {
-    return null;
+    return resultArray.length ? resultArray : null;
   }
 }
 console.log(getEmployeeInfo("Андрей"));
