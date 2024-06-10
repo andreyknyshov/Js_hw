@@ -11,8 +11,8 @@
   Рекоммендация: попробуйте метод .repeat()
   */
 
-  const numberOfStrings = 5; // количество строк
-  let counter = 1; //счетчик повторов
+const numberOfStrings = 5; // количество строк
+let counter = 1; //счетчик повторов
 while (numberOfStrings >= counter) {
-    console.log(":)".repeat(counter++));
+  console.log(":)".repeat(counter++));
 }
