@@ -5,21 +5,24 @@
 
 function numLetter(sentence) {
   sentence = sentence.toLowerCase(); //Регистр не должен играть роли.
+  sentenceArray = sentence.split("");
   const counts = {}; //создаем объект для подсчета повторений
-  for (let index = 0; index < sentence.length; index++) {
-    const element = sentence[index];
-    counts[element] = counts[element] ? counts[element] + 1 : 1; //если буква уже есть - увеличиваем на 1, иначе присваиваем =1(буква найдена впервые)
-  }
+
+  sentenceArray.forEach((element) => {
+    if (element >= "a" && element <= "z") {
+      counts[element] = counts[element] ? counts[element] + 1 : 1;
+    }
+  });
 
   let resultSentence = ""; //собираем результат
-  for (let index = 0; index < sentence.length; index++) {
-    const element = sentence[index];
+  sentenceArray.forEach((element) => {
     if (element >= "a" && element <= "z") {
       resultSentence += counts[element];
     } else {
       resultSentence += element;
     }
-  }
+  });
+
   return resultSentence;
 }
 console.log(numLetter("I am the best AQA ever!"));

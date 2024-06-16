@@ -7,11 +7,11 @@
 function countVowels(word) {
   const vowels = "аеёиоуэюя";
   let count = 0;
-  for (let char of word) {
-    if (vowels.includes(char)) {
+  word.split("").forEach((element) => {
+    if (vowels.includes(element)) {
       count++;
     }
-  }
+  });
   return count;
 }
 

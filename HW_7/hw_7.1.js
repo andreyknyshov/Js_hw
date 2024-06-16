@@ -11,5 +11,5 @@ function getOnlyNumbers(arrayOnAnyValues) {
   });
   return result;
 }
-const arr = [NaN, 1, true, 5, "hello", undefined, 15.5, {}, []];
+const arr = [0, "2", NaN, 1, true, 5, "hello", undefined, 15.5, {}, []];
 console.log(getOnlyNumbers(arr));

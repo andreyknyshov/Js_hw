@@ -10,17 +10,17 @@ function checkBrackets(array) {
   const resultArray = array.flat(Infinity); //делаем исходный массив плоским, так как мы не знаем глубину вложенности массивов, применяем Infinity
   let openBr = 0; //счетчик открытых скобок
   let closeBr = 0; //счетчик закрытых скобок
-  for (let br of resultArray) {
-    if (br === "(") {
+  resultArray.forEach((element) => {
+    if (element === "(") {
       openBr++; // увеличиваем счетчик открытых
     } else {
       closeBr++; //увеличиваем счетчик закрытых (предполагаю, что в массиве только скобки согласно условия)
     }
-  }
+  });
   return openBr === closeBr;
 }
 
-if (checkBrackets([[["("]], ")", "(", ")", ")", ["(", ["("], [")"]]])) {
+if (checkBrackets([[["("]], ")", ")", "(", ")", ["(", ["("], [")"]]])) {
   console.log("Успех! у каждой скобочки есть соответствующая пара");
 } else {
   console.log("Все плохо! обнаружены скобочки без соответствующей пары");
